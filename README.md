@@ -50,10 +50,6 @@ codeigniter/
 
 ## Installation
 
-1. Download latest `ci-phpunit-test` from <https://github.com/kenjis/ci-phpunit-test/releases>.
-2. Unzip and copy `application/tests` folder into your `application` folder in CodeIgniter project.
-
-That's it.
 
 ### Installation via Composer
 
@@ -61,13 +57,13 @@ If you like Composer:
 
 ~~~
 $ cd /path/to/codeigniter/
-$ composer require kenjis/ci-phpunit-test --dev
+$ composer require cedriclange/ci-phpunit --dev
 ~~~
 
 And run `install.php`:
 
 ~~~
-$ php vendor/kenjis/ci-phpunit-test/install.php --from-composer
+$ php vendor/cedric/ci-phpunit/install.php --from-composer
 ~~~
 
 * The above command always overwrites existing files.
@@ -76,16 +72,10 @@ $ php vendor/kenjis/ci-phpunit-test/install.php --from-composer
 * You can specify your `application` and `public` folder with option arguments, if you use custom folder paths.
 
 ~~~
-$ php vendor/kenjis/ci-phpunit-test/install.php -a <application_dir> -p <public_dir>
+$ php vendor/cedriclange/ci-phpunit/install.php -a <application_dir> -p <public_dir>
 ~~~
 
 * But some paths may be not correct, in that case, please fix them in [tests/Bootstrap.php](https://github.com/kenjis/ci-phpunit-test/blob/master/application/tests/Bootstrap.php#L96).
-
-## Upgrading
-
-1. Download latest `ci-phpunit-test` from <https://github.com/kenjis/ci-phpunit-test/releases>.
-2. Unzip and replace `application/tests/_ci_phpunit_test` folder.
-3. Read [Change Log](https://github.com/kenjis/ci-phpunit-test/blob/master/application/tests/_ci_phpunit_test/ChangeLog.md).
 
 ### Upgrading via Composer
 
@@ -93,7 +83,7 @@ If you like Composer:
 
 ~~~
 $ cd /path/to/codeigniter/
-$ composer update kenjis/ci-phpunit-test
+$ composer update cedriclange/ci-phpunit
 ~~~
 
 If you're upgrading from a previous version of `ci-phpunit-test` that created
